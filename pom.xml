@@ -5,14 +5,14 @@
 	<groupId>in.co.yesisonline</groupId>
 	<artifactId>yesisonline-webapp</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	
 	<name>yesisonline.co.in</name>
 
 	<description>yesisonline-webapp Java Project</description>
 
 	<organization>
-		<name>Yesisonline Inc</name>
+		<name>yesisonline inc.</name>
 		
 	</organization>
 
@@ -95,22 +95,56 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Yesisonline Releases Nexus Repository</name>
+	      <name>yesisonline Releases Nexus Repository</name>
 	      <url>http://65.0.12.161:8081/repository/awslabs-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Yesisonline Snapshot Nexus Repository</name>
+	      <name>yesisonline Snapshot Nexus Repository</name>
 	      <url>http://65.0.12.161:8081/repository/awslabs-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
+		<finalName>www.yesisonline.co.in</finalName>
 		
 		<plugins>
+			<plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-deploy-plugin</artifactId>
+                            <version>${maven-deploy-plugin.version}</version>
+                                <configuration>
+                                 <skip>true</skip>
+                                </configuration>
+                       </plugin>
+                
+		      <plugin>
+   
+			      <groupId>org.sonatype.plugins</groupId>
+                              <artifactId>nexus-staging-maven-plugin</artifactId>
+                              <version>1.5.1</version>
+                              <executions>
+                                  <execution>
+                                     <id>default-deploy</id>
+                                    <phase>deploy</phase>
+                                         <goals>
+                                            <goal>deploy</goal>
+                                         </goals>
+                                 </execution>
+                             </executions>
+                                  <configuration>
+                                  <serverId>nexus</serverId>
+                                  <nexusUrl>http://65.0.12.161:8081/</nexusUrl>
+                                 <skipStaging>true</skipStaging>
+                                 </configuration>
+                      </plugin>
+			
+			
+			
+			
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -128,7 +162,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/yesisonline-webapp</contextPath>
 					</webApp>bs
 				</configuration>
 			</plugin>
@@ -141,7 +175,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>yesisonline-webapp</wtpContextName>
 				</configuration>
 			</plugin>
 			
