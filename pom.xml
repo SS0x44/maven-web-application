@@ -2,17 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<groupId>in.co.yesisonline</groupId>
+	<artifactId>yesisonline-webapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>maven-web-application</name>
+	<name>yesisonline.co.in</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>yesisonline-webapp Java Project</description>
 
 	<organization>
-		<name>test</name>
+		<name>Yesisonline Inc</name>
 		
 	</organization>
 
@@ -21,8 +21,8 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://54.210.74.70:9000/</sonar.host.url>
-		<sonar.login>ea05e52d1ff7d8e27c9615b3ee9cfdbe2665e9b2</sonar.login>
+		<sonar.host.urlhttp://13.127.89.210:9000/</sonar.host.url>
+		<sonar.login>0840190c6692650956c34104fe01431195292027</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -96,14 +96,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Test Releases Nexus Repository</name>
-	      <url>http://18.208.211.180:8081/repository/maven-releases/</url>
+	      <name>Yesisonline Releases Nexus Repository</name>
+	      <url>http://65.0.12.161:8081/repository/awslabs-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Test Snapshot Nexus Repository</name>
-	      <url>http://18.208.211.180:8081/repository/maven-snapshots/</url>
+	      <name>Yesisonline Snapshot Nexus Repository</name>
+	      <url>http://65.0.12.161:8081/repository/awslabs-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -130,7 +130,7 @@
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
 						<contextPath>/maven-web-application</contextPath>
-					</webApp>
+					</webApp>bs
 				</configuration>
 			</plugin>
 
