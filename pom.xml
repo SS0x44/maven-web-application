@@ -88,13 +88,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>yesisonline Releases Nexus Repository</name>
-	      <url>http://65.0.122.122:8081/repository/yesstore-releases/</url>
+	      <url>http://35.154.144.98:8081/repository/yesstore-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>yesisonline Snapshot Nexus Repository</name>
-	      <url>http://65.0.122.122:8081/repository/yesstore-snapshots/</url>
+	      <url>http://35.154.144.98:8081/repository/yesstore-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
