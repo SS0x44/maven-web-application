@@ -88,7 +88,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>yesisonline Releases Nexus Repository</name>
-	      <url>http://65.0.12.161:8081/repository/awslabs-release/</url>
+	      <url>http://52.66.198.54:8081/repository/awslabs-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
@@ -120,7 +120,7 @@
                              </executions>
                                   <configuration>
                                   <serverId>nexus</serverId>
-                                  <nexusUrl>http://65.0.12.161:8081/</nexusUrl>
+                                  <nexusUrl>http://52.66.198.54:8081/</nexusUrl>
                                  <skipStaging>true</skipStaging>
                                  </configuration>
                       </plugin>
